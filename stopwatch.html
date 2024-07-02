@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="swstyle.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="stopwatch">
+            <div class="display">
+                <div class="box">
+                    <span class="digits" id="minutes">00</span>:<span class="digits" id="seconds">00</span>:<span class="digits" id="milliseconds">00</span>
+
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="startStopBtn" onclick="startStop()">Start</button>
+                <button id="resetBtn" onclick="reset()">Reset</button>
+                <button id="lapBtn" onclick="recordLap()">Lap</button>
+            </div>
+            <div class="laps">
+                <ul id="lapsList"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="swscript.js"></script>
+</body>
+</html>

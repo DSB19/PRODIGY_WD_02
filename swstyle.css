@@ -1,0 +1,94 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #242222;
+}
+
+.container {
+    background: #3f3d3d;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(26, 25, 25, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+
+.stopwatch {
+    margin-top: 20px;
+}
+
+.display {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 150px;
+    color: #54f2fd;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button#startStopBtn {
+    background: #ebc935;
+    color: black;
+}
+
+button#resetBtn {
+    background: #ff8077;
+    color: black;
+}
+
+button#lapBtn {
+    background: #d969fc;
+    color: black;
+}
+
+button:disabled {
+    background: whitesmoke;
+    cursor: not-allowed;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.laps {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.laps ul {
+    list-style: none;
+    padding: 0;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.laps li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+    color: rgb(221, 221, 221);
+    font-weight: 500;
+}
+
+.laps li:last-child {
+    border-bottom: none;
+}
